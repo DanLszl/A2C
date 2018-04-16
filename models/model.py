@@ -99,7 +99,8 @@ class Model:
     @staticmethod
     def policy_name_parser(policy_name):
         from models.cnn_policy import CNNPolicy
-        policy_to_class = {'CNNPolicy': CNNPolicy}
+        from models.cnn_policy_wob import CNNPolicyWoB
+        policy_to_class = {'CNNPolicy': CNNPolicy, 'CNNPolicyWoB': CNNPolicyWoB}
 
         if policy_name in policy_to_class:
             return policy_to_class[policy_name]

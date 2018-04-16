@@ -3,7 +3,7 @@
   "env_class": "WobEnv",
   "env_name": "my-wob-click-button-v0",
   "env_seed": 42,
-  "policy_class": "CNNPolicy",
+  "policy_class": "CNNPolicyWoB",
   "unroll_time_steps": 5,
   "num_stack": 4,
   "num_iterations": 4e6,

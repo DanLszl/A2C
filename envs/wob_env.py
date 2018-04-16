@@ -1,6 +1,5 @@
 from envs.base_env import BaseEnv
 from envs.monitor import Monitor
-# TODO fix this import
 from envs.wrappers import ActionBox2Discrete, MovingActionWrapper, GreyChannelWrapper
 
 import click_button
