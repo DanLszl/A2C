@@ -40,3 +40,19 @@ class Monitor(Wrapper):
             self.env = wrappers.Monitor(self.env, experiment_dir + 'output', resume=True,
                                             video_callable=False)
         self.env.reset()
+
+    @property
+    def action_space(self):
+        return self.env.action_space
+
+    @action_space.setter
+    def action_space(self, value):
+        pass
+
+    @property
+    def observation_space(self):
+        return self.env.observation_space
+
+    @observation_space.setter
+    def observation_space(self, value):
+        pass
