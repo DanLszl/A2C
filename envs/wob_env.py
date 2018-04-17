@@ -17,7 +17,7 @@ class WobEnv(BaseEnv):
         self.gym_env = env
 
         env = Monitor(env, self.rank)
-        self.monitor = env
+        self.monitor = env.monitor
 
         env.seed(self.seed + self.rank)
 
@@ -34,7 +34,7 @@ class WobEnv(BaseEnv):
         button_height = 10
         mouse_width = 10
         mouse_height = 10
-        max_steps = 100
+        max_steps = 200
         randomize_mouse = 'xy'
         randomize_button = 'xy'
         decrease_reward_with_time = True

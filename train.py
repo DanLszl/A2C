@@ -163,6 +163,8 @@ class Trainer(BaseTrainer):
 
             # Take a step in the real environment
             observation, rewards, dones, info = self.env.step(actions)
+            # TODO delete this:
+            # self.env.render()
             # plt.imsave(fname="img" + str(n) + ".png", arr=observation[0, :, :, 0], cmap='gray')
 
             # Tensorboard dump, divided by 100 to rescale (to make the steps make sense)
